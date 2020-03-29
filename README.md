@@ -34,3 +34,36 @@ The barrier for solving the second version of the environment is slightly differ
 
 * After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 20 (potentially different) scores. We then take the average of these 20 scores.
 * This yields an **average score** for each episode (where the average is over all 20 agents).
+
+# Getting Started
+
+## Dependencies
+
+To set up your python environment to run the code in this repository, follow the instructions below.
+
+1. Create (and activate) a new environment with Python 3.6.
+
+	- __Windows__: 
+	```bash
+	conda create --name drlnd python=3.6 
+	activate drlnd
+	```
+
+2. Install pytorch >= 1.4.0
+
+3. Follow the instructions in [this repository](https://github.com/openai/gym) to perform a minimal install of OpenAI gym.  
+	- Next, install the **classic control** environment group by following the instructions [here](https://github.com/openai/gym#classic-control).
+	- Then, install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym#box2d).
+	
+4. Clone the repository (if you haven't already!), and navigate to the `python/` folder.  Then, install several dependencies.
+```bash
+git clone https://github.com/erichans/udacity-deeprl-continuous-control.git
+cd udacity-deeprl-continuous-control/python
+pip install .
+```
+# Instructions
+
+## Train the Agent
+```bash
+python train.py
+```
