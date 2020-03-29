@@ -67,3 +67,17 @@ pip install .
 ```bash
 python train.py
 ```
+You can tune the model by changing the following hyperparameters in following files (default values below):
+
+### train.py
+* TOTAL_EPISODES = 200
+
+### agent.py
+* LR = 5e-4 (learning rate)
+* BUFFER_SIZE = 1.000.000
+* BATCH_SIZE = 64 (times the number of agents. i.e 64 x 20 agents -> Batch size: 1280)
+* GAMMA = .99 (discount factor)
+* TAU = 1e-3 (soft update from local actor and critic network parameters to their respective target network parameters)
+* LR_ACTOR = 1e-4 (Actor local learning rate)
+* LR_CRITIC = 1e-3 (Critic local learning rate)
+* WEIGHT_DECAY = 0 (L2 weight decay for the Actor local)
