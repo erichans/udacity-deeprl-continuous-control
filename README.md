@@ -73,7 +73,6 @@ You can tune the model by changing the following hyperparameters in following fi
 * TOTAL_EPISODES = 200
 
 ### agent.py
-* LR = 5e-4 (learning rate)
 * BUFFER_SIZE = 1.000.000
 * BATCH_SIZE = 64 (times the number of agents. i.e 64 x 20 agents -> Batch size: 1280)
 * GAMMA = .99 (discount factor)
