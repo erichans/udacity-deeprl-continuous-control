@@ -80,3 +80,11 @@ You can tune the model by changing the following hyperparameters in following fi
 * LR_ACTOR = 1e-4 (Actor local learning rate)
 * LR_CRITIC = 1e-3 (Critic local learning rate)
 * WEIGHT_DECAY = 0 (L2 weight decay for the Actor local)
+
+## Report
+To see more details like:
+* Learning Algorithm 
+* Plot of Rewards
+* Ideas for Future Work
+
+Check the [Report](/Report.md)
